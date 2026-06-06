@@ -1,0 +1,27 @@
+{
+  "name": "react-native-device-kit",
+  "version": "1.0.0",
+  "description": "Comprehensive React Native device toolkit — camera, gallery, clipboard, haptics, biometrics, screen brightness, sharing, device info. Zero native setup, pure hooks.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": ["src", "README.md", "LICENSE"],
+  "keywords": [
+    "react-native", "camera", "gallery", "image-picker",
+    "clipboard", "haptics", "biometrics", "face-id",
+    "touch-id", "screen-brightness", "share", "device-info",
+    "hooks", "toolkit"
+  ],
+  "author": "Muhammad Suleman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuhammadSuleman97/react-native-device-kit"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
