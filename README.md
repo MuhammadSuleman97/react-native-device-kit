@@ -3,7 +3,7 @@
 > Comprehensive React Native device toolkit — 7 hooks for camera, clipboard, haptics, biometrics, screen, sharing, and device info. Zero native setup.
 
 ```bash
-npm install react-native-device-kit
+npm install @kryndal/react-native-device-kit
 ```
 
 ---
@@ -13,7 +13,7 @@ npm install react-native-device-kit
 ### 📸 `useMedia()` — Camera & Gallery
 
 ```tsx
-import { useMedia } from 'react-native-device-kit';
+import { useMedia } from '@kryndal/react-native-device-kit';
 
 const { launchCamera, launchGallery, loading } = useMedia();
 
@@ -28,7 +28,7 @@ Optional: `npm install react-native-image-picker`
 ### 📋 `useClipboard()` — Copy & Paste
 
 ```tsx
-import { useClipboard } from 'react-native-device-kit';
+import { useClipboard } from '@kryndal/react-native-device-kit';
 
 const { copy, paste, lastCopied } = useClipboard();
 copy('Hello World!');
@@ -40,7 +40,7 @@ const text = await paste();
 ### 📳 `useHaptics()` — Haptic Feedback
 
 ```tsx
-import { useHaptics } from 'react-native-device-kit';
+import { useHaptics } from '@kryndal/react-native-device-kit';
 
 const { trigger, vibrate } = useHaptics();
 trigger('success');  // light | medium | heavy | selection | success | warning | error
@@ -54,7 +54,7 @@ Optional: `npm install react-native-haptic-feedback` (for rich iOS haptics)
 ### 💡 `useScreen()` — Brightness & Keep-Awake
 
 ```tsx
-import { useScreen } from 'react-native-device-kit';
+import { useScreen } from '@kryndal/react-native-device-kit';
 
 const { brightness, setBrightness, keepAwake } = useScreen();
 setBrightness(0.8);
@@ -66,7 +66,7 @@ keepAwake(true);
 ### 📤 `useShare()` — Native Share Dialog
 
 ```tsx
-import { useShare } from 'react-native-device-kit';
+import { useShare } from '@kryndal/react-native-device-kit';
 
 const { share } = useShare();
 await share({ message: 'Check this out!', url: 'https://...' });
@@ -77,7 +77,7 @@ await share({ message: 'Check this out!', url: 'https://...' });
 ### 🔐 `useBiometrics()` — Face ID / Fingerprint
 
 ```tsx
-import { useBiometrics } from 'react-native-device-kit';
+import { useBiometrics } from '@kryndal/react-native-device-kit';
 
 const { authenticate, isAvailable } = useBiometrics();
 const ok = await authenticate('Unlock to continue');
@@ -90,7 +90,7 @@ Optional: `npm install react-native-biometrics`
 ### 📏 `useDeviceInfo()` — Device Info & Sizing
 
 ```tsx
-import { useDeviceInfo } from 'react-native-device-kit';
+import { useDeviceInfo } from '@kryndal/react-native-device-kit';
 
 const { platform, isTablet, scale } = useDeviceInfo();
 const fontSize = scale(16); // responsive font size

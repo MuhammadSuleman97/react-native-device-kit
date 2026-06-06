@@ -1,5 +1,5 @@
 {
-  "name": "react-native-device-kit",
+  "name": "@kryndal/react-native-device-kit",
   "version": "1.0.0",
   "description": "Comprehensive React Native device toolkit — camera, gallery, clipboard, haptics, biometrics, screen brightness, sharing, device info. Zero native setup, pure hooks.",
   "main": "src/index.ts",
